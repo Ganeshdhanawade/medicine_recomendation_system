@@ -93,13 +93,13 @@ To deploy this project on [render](https://dashboard.render.com/)
 
 Below is the domo for created application
 
-![rice (1)](https://github.com/hiteshverse/Rice-production-analysis/blob/main/templates/project-demo.gif)
+![rice (1)](medical_demo.gif)
 
 
 ## Live demo
 Below is the link for live demo
 
-https://rice-production-analysis.onrender.com
+[https://rice-production-analysis.onrender.com](https://medicine-recomendation-system.onrender.com/)
 
 
 ## Learning Objective
@@ -112,12 +112,7 @@ The following points were the objective of the project . If you are looking for 
 - Data Modelling
 - Model Evaluation
 - Model Deployment
-## Technical Aspect
-- Using PowerBI dekstop create the report.
-- Training a machine learning model using scikit-learn.
-- Building and hosting a Flask web app on Render.
-- A user has to put details like ram, battry power, Pixel resolution Height etc .
-- Once it get all the fields information , the prediction is displayed on a new page .
+.
 ## Usage/Examples
 
 ```javascript
@@ -130,19 +125,14 @@ def page():
 if __name__=='__main__':
     app.run(debug=True)
 ```
-
-
-## Dataset
-Now we can download the dataset on Kaggle and make analysis for it. Kaggle is the one of the largest website have to provide the datasets on verious domain.
-In the more information about the Kaggle plese [Click Here](https://www.kaggle.com/)
-
-Below link is to dataset on kaggle
-
-https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification
-## Acknowledgements
-
- - [Awesome HTML Templates](https://github.com/Ganeshdhanawade/Rice-Production-Analysis)
- - [Awesome Flask file](https://github.com/Ganeshdhanawade/Rice-Production-Analysis/blob/main/app.py)
+## Dockerfile
+```javascript
+FROM python:3.9
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD python main.py
+```
 
 
 ## Environment Variables
@@ -163,13 +153,6 @@ Install my-project with npm
   cd my-project
 ```
     
-## Lessons Learned
-
-Now the bulding that project i can learn the concept of how to create the web in HTML and how to desing that page well attractive. Also i can get the knowlaged about the render to how exactly deploy the model on cloud.
-
-In challanges my mesure challange is that how to select the best feature they are highly affected my responce.
-and selection of the best model to improve the accuracy.
-
 
 # Hi, I'm Ganesh! 👋
 
@@ -178,18 +161,8 @@ and selection of the best model to improve the accuracy.
 I am Completed post graduation in statistics with verious takenincal skills and 2+ year of experiance in data science domain. This project i create on self learning.
 
 
-## Other Common Github Profile Sections
-👩‍💻 I'm currently working on Assistant Proffesor in KVM,wai
-
-🧠 I'm currently learning Deep learning and NLP.
-
-👯‍♀️ I'm looking to Job Change toword the data science.
-
-
-
-
 ## 🛠 Skills
-R, spss, Python, Flask, ML, DL, NLP, Render, MySQL, PowerBI, Excel etc.
+R, spss, Python, Flask, ML, DL, NLP, Render, MySQL, PowerBI, Excel, MLOps, Docker, GenrativeAI, Forcasting etc.
 
 
 ![Logo](https://camo.githubusercontent.com/3cdf9577401a2c7dceac655bbd37fb2f3ee273a457bf1f2169c602fb80ca56f8/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6d6164652d776974682d707974686f6e2e737667)
